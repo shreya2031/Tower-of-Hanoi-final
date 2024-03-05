@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Hanoi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Inter:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='index.css'>
+    
+ 
+</head>
+
+<body>
+    <h1 class="h1">Tower of Hanoi
+        <!-- <a href="https://github.com/GaryBikini/TowerOfHanoi">
+            <img src="https://github.com/favicon.ico" width="18" />
+        </a> -->
+    </h1>
+    <h2 class="h2">An animated solution to the towering mathematical puzzle</h2>
+    <div class="flex-container-vertical">
+        <img src="terry.png" width="950" height="650">
+    </div>
+    
+
+    <p class="desc">
+        Before getting started, let’s talk about what the Tower of Hanoi problem is. Well, this is a fun puzzle game where the objective is to move an entire stack of disks from the source position to another position. Three simple rules are followed:
+        <ol class="list">
+            <li>Only one disk can be moved at a time.</li>
+            <li>Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack. In other words, a disk can only be moved if it is the uppermost disk on a stack.</li>
+            <li>No larger disk may be placed on top of a smaller disk.</li>
+        </ol>
+
+    </p>
+    <p class ="caption">
+        Now, you can select the number of disks and see the puzzle being solved!
+    </p>
+    <p class="disk">
+        <!-- Disks: <span id="n4show">...</span> -->
+        Disks:
+        <!-- <input id="n" type="range" min="1" max="9" oninput="updateN(+this.value);" /> -->
+        <select id="n" class="dropdown" onchange="updateN(+this.value);">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+        Total Moves:  <span id="totalmoves">...</span>
+          
+    </p>
+    <!-- <p>
+        Step Time (ms): <span id="tm4show">...</span>
+        <input id="tm" type="range" min="100" max="3000" step="100" oninput="updateTime(+this.value);" />
+    </p> -->
+    <p class="movescounter">
+        Moves counter:  <span id="moves">...</span>
+    </p>
+    
+    <div class="container">
+        <input class="btn" type="button" value="Start" onclick="start();" />
+        <input class="btn" type="button" value="Reset" onclick="stop();" />
+    </div>
+
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

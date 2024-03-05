@@ -1,0 +1,146 @@
+/* .main {
+    background-color: antiquewhite;
+    border-radius: 5px;
+} */
+.h1 {
+    
+    max-width: 50em;
+    margin-left: 30;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3em;
+    text-align: center;
+
+
+}
+.h2 {
+   
+    
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: regular;
+    font-size: 1.9em;
+    text-align: center;
+
+
+}
+.disk {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    font-family: "Inter", sans-serif;
+    font-size: 1.8em;
+   
+}
+.movescounter{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    font-family: "Inter", sans-serif;
+    font-size: 1.8em;
+   
+}
+.totalmoves{
+    font-family: "Inter", sans-serif;
+    font-size: 1.8em;
+    margin-left: 20px;
+   
+}
+
+.caption {
+    margin-left: 3em;
+    margin-right: 5em;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-size: 2.5em;
+    font-weight: 500;
+   
+}
+
+.flex-container-vertical {
+    display: flex;
+    align-items: center; /* Centers the image vertically */
+    height: 650px; /* Adjust the height as needed */
+    justify-content: center; 
+}
+
+.desc{
+    font-family: "Inter", sans-serif;
+    margin-left: 3em;
+    margin-right: 3em;
+    font-size: 1.8em;
+}
+
+.list{
+    font-family: "Inter", sans-serif;
+    margin-left: 3em;
+    margin-right: 23em;
+    font-size: 1.3em;
+    font-weight: 250;
+    font-style: italic;
+}
+
+.bar {
+    stroke: burlywood;
+    stroke-width: 5px;
+}
+
+.bar:hover {
+    filter: brightness(60%);
+}
+
+.label {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.8em;
+    text-anchor: middle;
+}
+
+.disk:hover {
+    filter: brightness(87%);
+}
+
+.btn {
+    height: 35px;
+    width: 80px;
+    border: none;
+    background: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    margin-right: 10px; 
+
+}
+
+.btn:hover {
+    background-color: #aaa; /* Change to the desired color on hover */
+}
+.dropdown{
+    height: 35px;
+    width: 90px;
+    border: none;
+    background: white;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    margin-right: 20px;   
+}
+.container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 1vh; /* Adjust the height as needed, here it's set to full viewport height */
+  }
+  
