@@ -75,7 +75,7 @@ function addDisks() {
         dws = [...Array(n).keys()].map(d => dw_scale(d)),
         dh = 45,
         rx = 25,
-        discColors = ["purple", "lightblue", "orange","green","pink"]; // Add more colors 
+        discColors = ["purple", "lightblue", "orange","green","pink","red","yellow","darkblue"]; // Add more colors 
 
     for (let i = 0; i < n; i++) {
         dw = n == 1 ? dw_max : dws[i];
@@ -163,7 +163,7 @@ function moveDisks() {
                     .duration(transTime)
                     .attr('transform', `translate(${m.l + x2},${m.t + y2})`)
 
-                    .transition().ease(d3.easeBounce)
+                    .transition()
                     .duration(transTime)
                     .attr('transform', `translate(${m.l + x3},${m.t + y3})`)
             }, delayTime)

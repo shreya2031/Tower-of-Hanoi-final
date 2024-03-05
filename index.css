@@ -29,23 +29,25 @@
 
 }
 .disk {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
+    /* display: flex;
+    justify-content: center; Centers horizontally */
+    text-align: center;
     font-family: "Inter", sans-serif;
     font-size: 1.8em;
-   
 }
 .movescounter{
-    display: flex;
-    justify-content: center; /* Centers horizontally */
+    
+    text-align: center;
     font-family: "Inter", sans-serif;
     font-size: 1.8em;
    
 }
 .totalmoves{
+    
     font-family: "Inter", sans-serif;
     font-size: 1.8em;
-    margin-left: 20px;
+    margin-left: 30px;
+    
    
 }
 
@@ -74,12 +76,15 @@
 }
 
 .list{
+    
     font-family: "Inter", sans-serif;
-    margin-left: 3em;
-    margin-right: 23em;
+    margin-left: 23em;
+    margin-right: 20em;
+    margin-bottom: 1em;
     font-size: 1.3em;
     font-weight: 250;
     font-style: italic;
+    
 }
 
 .bar {
@@ -122,8 +127,8 @@
     background-color: #aaa; /* Change to the desired color on hover */
 }
 .dropdown{
-    height: 35px;
-    width: 90px;
+    height: 30px;
+    width: 85px;
     border: none;
     background: white;
     font-size: 17px;
